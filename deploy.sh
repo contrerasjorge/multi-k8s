@@ -1,5 +1,5 @@
 docker build -t contrerasjorge/multi-client:latest -f ./client/Dockerfile -t contrerasjorge/multi-client:$SHA ./client
-docker build -t contrerasjorge/multi-server:latest -f ./server/Dockerfile-t contrerasjorge/multi-server:$SHA ./server
+docker build -t contrerasjorge/multi-server:latest -f ./server/Dockerfile -t contrerasjorge/multi-server:$SHA ./server
 docker build -t contrerasjorge/multi-worker:latest -f ./worker/Dockerfile -t contrerasjorge/multi-worker:$SHA ./worker
 
 docker push contrerasjorge/multi-client:latest
